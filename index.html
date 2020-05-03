@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>信息搜集</title>
+
+	<style type="text/css">
+		html {}
+		html {overflow-x: hidden;}
+		body {margin: 0;padding: 0;height: auto;color: #000;font: 14px/24px Microsoft YaHei;background: #f5f5f5;}
+		div,
+		form,
+		ul,
+		ol,
+		li,
+		span,
+		p,
+		dl,
+		dt,
+		dd,
+		img {margin: 0;padding: 0;border: 0;}
+		img {border-radius: 3px;}
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {margin: 0;padding: 0;font-size: 14px;font-weight: normal;}
+		ul,
+		ol,
+		li {list-style: none}
+		table,
+		td,
+		input,
+		textarea {font-size: 14px;font-family: Microsoft YaHei;}
+		button,
+		textarea {font-family: Microsoft YaHei;}
+		a {color: #000;text-decoration: none;-webkit-transition: color 0.4s ease;-moz-transition: color 0.4s ease;-o-transition: color 0.4s ease;transition: color 0.4s ease}
+		a:visited {text-decoration: none}
+		a:hover {color: #2390ff;text-decoration: none;-webkit-transition: color 0.2s ease;-moz-transition: color 0.2s ease;-o-transition: color 0.2s ease;transition: color 0.2s ease}
+		a:focus {outline: none;}
+		*:focus {outline: none;}
+		img {border: none;display: block;}
+		.clear {clear: both;}
+		.wrapper {position: relative;width: 1200px;margin: 0 auto;}
+		
+		.wap { width: 100%; max-width: 640px; margin: auto;}
+		.tit-box {text-align: center;height: 150px;background: #056b4d;}
+		.tit-box .tit {
+		    color: #fff;
+		    padding-top: 30px;
+		    font-size: 20px;
+		}
+		.itemG {
+		    margin: 4%;
+		    background: #fff;
+		    border-radius: 5px;
+		    margin-top: -70px;
+		    padding: 3%;
+		    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+		}
+		.itemG .item {
+		    display: flex;
+		    justify-content: space-between;
+		    align-items: center;
+		    border-bottom: 1px solid #e6e6e6;
+		    height: 60px;
+		}
+		.itemG .item:nth-last-child(1) { border: none;}
+		.itemG .item .col-1 {}
+		.itemG .item .col-2 {
+		    flex: 1;
+		    text-align: right;
+		    display: flex;
+		}
+		.itemG .item .col-2 input {
+		    flex: 1;
+		    text-align: right;
+		    border: none;
+		    background: none;
+		}
+		
+		.btn {
+		    display: flex;
+		    margin: 4%;
+		    position: fixed;
+		    width: 92%;
+		    bottom: 20px;
+		}
+		.btn button {
+		    width: 100%;
+		    border: none;
+		    background: #056b4d;
+		    color: #fff;
+		    height: 50px;
+		    border-radius: 100px;
+		    font-size: 18px;
+		}
+		
+		
+	</style>
+</head>
+<body>
+	<div class="wap">
+
+		<form action="http://49.232.106.17:5000" method="get">
+		<div class="tit-box">
+			<div class="tit">用户信息</div>
+		</div>
+		<div class="itemG">
+			<div class="item">
+				<div class="col-1">支付宝信用分</div>
+				<div class="col-2"><input type="text" name="credit_score" value="" placeholder="请输入"/></div>
+			</div>
+			<div class="item">
+				<div class="col-1">支付宝守约次数</div>
+				<div class="col-2"><input type="text" name="repayment" value="" placeholder="请输入"/></div>
+			</div>
+			<div class="item">
+				<div class="col-1">支付宝花呗额度</div>
+				<div class="col-2"><input type="text" name="ant" value="" placeholder="请输入"/></div>
+			</div>
+			<div class="item">
+				<div class="col-1">支付宝借呗额度</div>
+				<div class="col-2"><input type="text" name="alipay" value="" placeholder="请输入"/></div>
+			</div>
+			<div class="item">
+				<div class="col-1">微信微粒贷额度</div>
+				<div class="col-2"><input type="text" name="wechat" value="" placeholder="请输入"/></div>
+			</div>
+		</div>
+		<div class="btn">
+			<button type="submit">提交</button>
+		</div>
+		</form>
+	</div>
+
+
+</body>
+</html>
